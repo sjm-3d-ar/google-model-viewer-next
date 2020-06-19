@@ -11,16 +11,16 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const Hello = () => {
+const Model = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <Typography variant="h1" gutterBottom>
-        Hello!
+        Model
       </Typography>
       <ToastButton />
     </div>
   );
 };
 
-export default Hello;
+export default Model;

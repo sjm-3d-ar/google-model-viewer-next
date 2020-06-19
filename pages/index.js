@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Hello } from "_views";
+import { Model } from "_views";
 
-const HomePage = () => <Hello />;
+const HomePage = () => <Model />;
 
 export default HomePage;

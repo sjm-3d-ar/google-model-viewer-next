@@ -1,1 +1,1 @@
-export { default as Hello } from "./Hello";
+export { default as Model } from "./Model";
