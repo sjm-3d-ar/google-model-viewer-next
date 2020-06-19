@@ -1,25 +1,19 @@
 /* eslint-disable no-param-reassign */
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-import { ToastButton } from "_common";
+import styles from "./styles";
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    padding: theme.spacing(4),
-  },
-}));
+const useStyles = makeStyles(styles);
 
 const Model = () => {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
-      <Typography variant="h1" gutterBottom>
-        Model
-      </Typography>
-      <ToastButton />
-    </div>
+    <model-viewer
+      className={classes.model_viewer}
+      src="/images/Astronaut.glb"
+      alt="A 3D model of an astronaut"
+    />
   );
 };
 

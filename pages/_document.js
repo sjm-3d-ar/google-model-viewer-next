@@ -36,6 +36,18 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
           />
+
+          {/* <!-- The following libraries and polyfills are recommended to maximize browser support --> */}
+          {/* <!-- NOTE: you must adjust the paths as appropriate for your project --> */}
+
+          {/* <!-- REQUIRED: Web Components polyfill to support Edge and Firefox < 63 --> */}
+          <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js" />
+
+          {/* <!-- OPTIONAL: Intersection Observer polyfill for better performance in Safari and IE11 --> */}
+          <script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js" />
+
+          {/* <!-- OPTIONAL: Resize Observer polyfill improves resize behavior in non-Chrome browsers --> */}
+          <script src="https://unpkg.com/resize-observer-polyfill@1.5.1/dist/ResizeObserver.js" />
         </Head>
         <body>
           <Main />
@@ -43,6 +55,12 @@ class MyDocument extends Document {
           <div id="app-portal-2" />
           <div id="app-portal-3" />
           <NextScript />
+
+          {/* <!-- Loads <model-viewer> for modern browsers: --> */}
+          <script
+            type="module"
+            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+          />
         </body>
       </Html>
     );
