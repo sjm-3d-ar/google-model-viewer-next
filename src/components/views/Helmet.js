@@ -22,14 +22,12 @@ const Helmet = () => {
     <div className={classes.container}>
       <model-viewer
         class={classes.model}
+        ar
+        camera-orbit="-20deg 75deg 2m"
         camera-controls
         src="/images/DamagedHelmet/DamagedHelmet.gltf"
-        environment-image="/images/studio_small_07_1k.hdr"
         shadow-intensity="1"
-        stage-light-intensity="3"
-        environment-intensity="2"
         alt="A 3D model of a helmet"
-        backgroundColor="#FF6F59"
       />
     </div>
   );
